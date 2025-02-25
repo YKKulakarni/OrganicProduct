@@ -1,6 +1,6 @@
 import React, { useState, memo, useEffect } from 'react';
 import titleLine from '../asset/Images/title_line.png';
-import OwlCarousel from 'react-owl-carousel3';
+import OwlCarousel from 'react-owl-carousel';
 import "owl.carousel/dist/assets/owl.carousel.css";
 import "owl.carousel/dist/assets/owl.theme.default.css";
 import { RiShoppingBag3Line } from "react-icons/ri";
