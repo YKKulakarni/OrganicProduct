@@ -9,15 +9,15 @@ function SecondaryNav() {
         },
         {
             name: 'Blog',
-            link: '/##'
+            link: '/blog'
         },
         {
             name: 'Contact',
-            link: '/##'
+            link: '/contact'
         },
         {
             name: 'Page',
-            link: '/##'
+            link: '/page'
         },
         {
             name: 'Cart',
@@ -38,7 +38,7 @@ function SecondaryNav() {
                         )
                     })
                 }
-                <a href="" className='nav-btn'>Buy Now</a>
+                <a href="/" className='nav-btn'>Buy Now</a>
             </div>
     )
 }
