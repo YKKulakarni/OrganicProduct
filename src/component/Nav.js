@@ -12,7 +12,7 @@ function Nav() {
     const socialIcons = [
         {
             icon: <FaXTwitter />,
-            link: "https://x.com/"
+            link: "https://twitter.com/"
         },
         {
             icon: <CgFacebook />,

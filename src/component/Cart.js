@@ -26,10 +26,12 @@ const Cart = () => {
 
   // Function to remove an item from the cart
   const removeItemFromCart = (itemId) => {
-    const updatedItems = { ...addedItems };
-    delete updatedItems[itemId];
-    setAddedItems(updatedItems);
-    localStorage.setItem('addedItems', JSON.stringify(updatedItems)); // Update localStorage
+    setAddedItems(prevItems => {
+      const updatedItems = { ...prevItems };
+      delete updatedItems[itemId];
+      localStorage.setItem('addedItems', JSON.stringify(updatedItems));
+      return updatedItems;
+    });
   };
 
   // Calculate total price

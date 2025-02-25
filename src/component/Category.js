@@ -16,7 +16,7 @@ const allCategory = [
   {
     icon: categoryVegs,
     title: 'Vegetables',
-    desc: 'cultivated naturally, free from chemicals, offering a wholesome.'
+    desc: 'Cultivated naturally, free from chemicals, offering a wholesome and healthy choice for consumers.'
   },
   {
     icon: categoryBeverages,
@@ -35,7 +35,7 @@ const allCategory = [
   },
   {
     icon: categoryHealthFitness,
-    title: 'Health & Fittness',
+    title: 'Health & Fitness',
     desc: 'supplements and protein powders to workout gear and wellness essentials.'
   }
 ]
@@ -46,7 +46,7 @@ function Category() {
       <img src={titleLine} alt="Category Banner" loading='lazy' />
       <div className='all-category'>
         {
-          allCategory.map((item,index) => {
+          allCategory.map((item, index) => {
             return (
               <div className="card" key={index}>
                 <img src={item.icon} alt="" />

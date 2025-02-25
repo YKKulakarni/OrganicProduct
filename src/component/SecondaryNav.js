@@ -5,11 +5,11 @@ function SecondaryNav() {
     const navItems = [
         {
             name: 'Home',
-            link: '/home'
+            link: '/'
         },
         {
             name: 'Blog',
-            link: '/blog'
+            link: '#blog'
         },
         {
             name: 'Contact',
@@ -38,7 +38,7 @@ function SecondaryNav() {
                         )
                     })
                 }
-                <a href="/" className='nav-btn'>Buy Now</a>
+                <Link to="/" className='nav-btn'>Buy Now</Link>
             </div>
     )
 }

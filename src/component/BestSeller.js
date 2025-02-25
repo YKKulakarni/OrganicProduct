@@ -12,6 +12,7 @@ import featuredVeg6 from '../asset/Images/featured_veg-6.png'
 import featuredVeg7 from '../asset/Images/featured_veg-7.png'
 import { RiShoppingBag3Line } from "react-icons/ri";
 import { FaRegStar } from "react-icons/fa";
+import { Link } from 'react-router-dom'
 
 
 const options = {
@@ -100,7 +101,7 @@ function BestSeller() {
                                     &#8377;{item.price}
                                 </div>
                             </div>
-                            <a href="/"><RiShoppingBag3Line /> &nbsp;add to cart</a>
+                            <Link to="/cart" className='cart-btn'><RiShoppingBag3Line /> &nbsp;add to cart</Link>
                         </div>)
                     })
                 }

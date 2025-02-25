@@ -6,6 +6,7 @@ import "owl.carousel/dist/assets/owl.theme.default.css";
 import { RiShoppingBag3Line } from "react-icons/ri";
 import { IoBagCheckOutline } from "react-icons/io5";
 import { FaRegStar } from "react-icons/fa";
+import { Link } from 'react-router-dom';
 
 const options = {
     loop: true,
@@ -64,10 +65,10 @@ const FeaturedProduct = memo(() => {
                                     &#8377;{item.price}
                                 </div>
                             </div>
-                            <a href="/" onClick={(e) => handleCartText(item.id, e)}>
+                            <Link to="/" onClick={(e) => handleCartText(item.id, e)} className='cart-btn'>
                                 {addedItems[item.id] ? <IoBagCheckOutline /> : <RiShoppingBag3Line />} &nbsp;
                                 {addedItems[item.id] ? "Added" : "Add to Cart"}
-                            </a>
+                            </Link>
                         </div>
                     ))
                 }
